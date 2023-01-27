@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
     <link rel="stylesheet" href="style.css">
+    <!-- icon remix link CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- initialize AOS CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Art spot</title>
 </head>
+<!-- header -->
 <header>
     <nav>
         <div class="logo">
-
             <img src="./artSpot-img/logo.png" alt="art spot">
         </div>
+        <!-- nav list -->
         <ul class="list-nav">
             <li class="item">
                 <a class="item-link" href="#">Home</a>
@@ -29,8 +36,12 @@
             </li>
 
         </ul>
-        <div class="menu-icon">
-
+        <!-- menu icon responsive -->
+        <div class="menu-icon open">
+            <i class="ri-menu-3-line"></i>
+        </div>
+        <div class="menu-icon close">
+            <i class="ri-close-fill"></i>
         </div>
     </nav>
 </header>
@@ -39,9 +50,31 @@
 
     <section>
         <div class="container home">
+            <div class="home__content">
+                <div class="home__content-text">
+                    <h1>Era of digital art</h1>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+                </div>
+                <a href="#" class="home-btn">Explore more</a>
+            </div>
+            <div class="home__img">
+                <img src="./artSpot-img/home-img.png" alt="">
+            </div>
 
         </div>
+        <hr>
+        <img src="./artSpot-img/Ellipse-1.png" alt="">
+        <img src="./artSpot-img/Ellipse-2.png" alt="">
     </section>
+
+
+
+    <!-- initialize AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>
