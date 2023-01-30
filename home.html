@@ -15,13 +15,14 @@
     <title>Art spot</title>
 </head>
 <!-- header -->
-<header>
+<header class="container primary_header flex">
+
+    <div class="logo">
+        <img src="./artSpot-img/logo.png" alt="art spot">
+    </div>
     <nav>
-        <div class="logo">
-            <img src="./artSpot-img/logo.png" alt="art spot">
-        </div>
         <!-- nav list -->
-        <ul class="list-nav">
+        <ul class="primary_navigation flex">
             <li class="item">
                 <a class="item-link" href="#">Home</a>
             </li>
@@ -35,21 +36,20 @@
                 <a class="item-link" href="#">Contact</a>
             </li>
 
+            <i class="ri-close-fill close"></i>
+
         </ul>
-        <!-- menu icon responsive -->
-        <div class="menu-icon open">
-            <i class="ri-menu-3-line"></i>
-        </div>
-        <div class="menu-icon close">
-            <i class="ri-close-fill"></i>
-        </div>
+
+
+
     </nav>
+    <i class="ri-menu-3-line open"></i>
 </header>
 
 <body>
 
     <section>
-        <div class="container home">
+        <div class="container home flex">
             <div class="home__content">
                 <div class="home__content-text">
                     <h1>Era of digital art</h1>
@@ -62,12 +62,12 @@
             </div>
 
         </div>
-        <hr>
-        <img src="./artSpot-img/Ellipse-1.png" alt="">
-        <img src="./artSpot-img/Ellipse-2.png" alt="">
+
+
     </section>
-
-
+    <img src="./artSpot-img/Ellipse-1.png" alt="">
+    <img src="./artSpot-img/Ellipse-2.png" alt="">
+    <hr>
 
     <!-- initialize AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
