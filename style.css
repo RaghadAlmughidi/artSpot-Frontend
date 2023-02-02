@@ -1,7 +1,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Pridi:wght@400;500&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Pridi&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Pridi:wght@400;500;600&display=swap');
-   :root {
+  :root {
       --btn-color: #44BB775E;
       --btn-create: #3D9462;
       --card: #2F2F2F;
@@ -16,49 +16,39 @@
       --card-border-radius: 8px;
       --heading-color: #e6e6e6;
   }
-  
   body {
       font-family: 'Pridi', serif;
       background-color: var(--body-color);
       position: relative;
   }
   /*========TYPOGRAPHY========*/
-  
   h1 {
       font-size: 2rem;
       color: var(--heading-color);
   }
-  
   p {
       color: var(--description);
       font-size: .89rem;
   }
-  
   .flex {
       display: flex;
   }
-  
   a {
       text-decoration: none;
   }
-  
   .container {
       padding: 2rem 10%;
   }
-  
   img {
       width: 100%;
   }
-  
   .logo {
       width: 100px;
   }
-  
   .primary_header {
       align-items: center;
       justify-content: space-between;
   }
-  
   .primary_navigation {
       position: relative;
       list-style: none;
@@ -66,11 +56,9 @@
       padding: 0;
       gap: 2rem;
   }
-  
   .primary_navigation a {
       color: var(--description);
   }
-  
   li a:hover {
       background-color: var(--body-color);
       padding: 1rem 40%;
@@ -78,7 +66,6 @@
       width: 100%;
       transition: all ease-out .3s;
   }
-  
   .close {
       display: none;
       position: absolute;
@@ -88,13 +75,11 @@
       font-size: 30px;
       padding: 1rem;
   }
-  
   .open {
       display: none;
       color: var(--white);
       font-size: 30px;
   }
-  
   @media (max-width:35em) {
       .primary_navigation {
           opacity: 0;
@@ -127,7 +112,6 @@
       }
   }
   /*================HOME==============*/
-  
   .home {
       justify-content: space-between;
       height: 100vh;
