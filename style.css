@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Pridi:wght@400;500;600&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
- :root {
+:root {
     --btn-color: #44BB775E;
     --btn-create: #3D9462;
     --card: #2F2F2F;
@@ -32,12 +33,96 @@ section {
     position: relative;
 }
 
+/*==================back btn==============*/
+.btn {
+    position: relative;
+    width: 80px;
+    height: 30px;
+    border: 2px solid var(--white);
+    border-radius: 50px;
+    background-color: var(--body-color);
+    z-index: 1;
+}
+
+.circle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: var(--white);
+    left: 0;
+    top: -2px;
+    z-index: 2;
+    border-radius: 50px;
+    transition: .4s cubic-bezier(0, 0, .8, .8);
+}
+
+.btn:hover .circle {
+    width: 80px;
+
+}
+
+.text {
+
+
+    font-size: 18px;
+
+    text-transform: uppercase;
+    margin-left: 1rem;
+    font-weight: 600;
+    z-index: 3px;
+    transition: .5px;
+
+    color: var(--white);
+    font-size: .70rem;
+    padding: 0 0 0 18px;
+}
+
+.btn:hover .text {
+    color: var(--white);
+}
+
+.arrow {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid var(--body-color);
+    border-right: 3px solid var(--body-color);
+    transform: rotate(45deg);
+    top: 10px;
+    left: 7px;
+    transition: .8s;
+
+}
+
+.arrow:before {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 2px;
+    background: var(--body-color);
+    transform: rotate(-45deg);
+    left: -30px;
+    top: 14px;
+    opacity: 0;
+    transition: .8s;
+}
+
+.btn:hover .arrow::before {
+    opacity: 1;
+}
+
+.btn:hover .arrow {
+    left: 60px;
+    transition: .5s;
+}
+/*==================end back btn==============*/
 
 /*========TYPOGRAPHY========*/
 
 h1 {
     font-size: 3rem;
     color: var(--heading-color);
+
 }
 
 hr .hor {
@@ -80,6 +165,18 @@ header {
     padding: 1rem 10%;
     /* z-index: -1; */
 }
+
+nav {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_heading {
+    font-size: 2rem;
+}
+
+
+
 
 .logo {
     width: 100px;
@@ -140,15 +237,19 @@ li a:hover {
     .primary_navigation {
         opacity: 0;
     }
+
     .container {
         padding: 2rem 1rem;
     }
+
     .open {
         display: block;
     }
+
     .close {
         display: block;
     }
+
     .active-nav {
         opacity: 1;
         position: fixed;
@@ -160,12 +261,15 @@ li a:hover {
         text-align: center;
         transition: all ease-in-out .4s;
     }
+
     li a {
         font-size: 1.3rem;
     }
+
     li {
         margin-bottom: 1rem;
     }
+
     li a:hover {
         background-color: var(--body-color);
         padding: 1rem;
