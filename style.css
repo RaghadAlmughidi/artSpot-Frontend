@@ -156,6 +156,12 @@ img {
     width: 100%;
 }
 
+i {
+    color: var(--description);
+    font-size: 1rem;
+
+}
+
 
 /*==============HEDER===============*/
 
@@ -410,3 +416,72 @@ li a:hover {
 
 
 /*================END POPULAR PAGE==============*/
+
+/*================GALLERY PAGE==============*/
+.gallery_content{
+    position: relative;
+}
+
+.gallery_content-text{
+  padding: 10rem 5%;
+  margin-left: 20rem;
+  text-align: center;
+
+} 
+.gallery_content-text h1{
+    margin-bottom: 1rem;
+}
+
+.gallery_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 25%;
+    width: 100%;
+
+}
+
+.view{
+    margin-top: 3rem;
+    margin-left: 10rem ;
+}
+.view p{
+    font-size: 1.5rem;
+    padding-right: 1rem;
+}
+.view a i{
+    font-size: 1.5rem;
+    padding-right: 1rem;
+}
+.gallery-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+    column-gap: 3rem;
+    row-gap: 3rem;
+  }
+
+  .card{
+    background-color: var(--card);
+    border-radius: var(--card-border-radius);
+    
+
+  }
+  .card-content{
+    justify-content: space-between;
+    padding: 1rem;
+    
+  }
+  .card-text p{
+    font-size: 1.5rem;
+    
+  }
+  .card-price{
+    border: 0.5px dashed var(--description);
+    border-radius: var(--card-border-radius);
+    padding: 5px; 
+    margin-top:auto  ;
+  } 
+  
+  /*================END GALLERY PAGE==============*/
