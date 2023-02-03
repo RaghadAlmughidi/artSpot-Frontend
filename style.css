@@ -20,6 +20,7 @@
     --input-border-radius: 4px;
     --card-border-radius: 8px;
     --heading-color: #e6e6e6;
+    --cardPopular-hover:#343434;
 }
 
 body {
@@ -115,6 +116,7 @@ section {
     left: 60px;
     transition: .5s;
 }
+
 /*==================end back btn==============*/
 
 /*========TYPOGRAPHY========*/
@@ -308,12 +310,17 @@ li a:hover {
     border: 1px solid var(--white);
     padding: .5rem 3rem;
     color: var(--white);
+    box-shadow: 10px 10px #1B1B1B;
+    font-size: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .home-btn:hover {
-    border: 1px dashed var(--btn-create);
+
     padding: .5rem 3rem;
     background-color: var(--btn-create);
+    transition: .3s;
 }
 
 .ec-1,
@@ -346,3 +353,60 @@ li a:hover {
 
 
 /*================END HOME PAGE==============*/
+/*================POPULAR PAGE==============*/
+.popular__artist {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+    column-gap: 3rem;
+
+}
+
+
+.popular__artist-img {
+ text-align: center;
+
+}
+
+.popular__artist-img img {
+    border: 2px dashed var(--description);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    padding: .30rem;
+    margin: 0 auto;
+}
+.popular__artist-img img:hover{
+    border-color: var(--btn-create);
+}
+
+.popular__artist-img:hover {
+    background-color:var(--cardPopular-hover) ;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    border-radius: var(--input-border-radius);
+    transition: .4s;
+}
+.popular__artist-content{
+    display: none;
+    padding: 0 1rem;
+}
+.popular__artist-img h3{
+    font-size: 2rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+.popular__artist-img:hover h3{
+    color: var(--btn-create);
+}
+.popular__artist-img:hover .popular__artist-content{
+    display: block;
+}
+
+
+/*================END POPULAR PAGE==============*/
