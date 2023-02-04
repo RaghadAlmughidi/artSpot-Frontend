@@ -419,13 +419,17 @@ li a:hover {
 
 /*================GALLERY PAGE==============*/
 .gallery_content{
-    position: relative;
+  justify-content: space-between;
+  width: 80%;
+
 }
 
 .gallery_content-text{
-  padding: 10rem 5%;
-  margin-left: 20rem;
-  text-align: center;
+text-align: center;
+max-width: 600px;
+width: 100%;
+margin-top: 9rem;
+
 
 } 
 .gallery_content-text h1{
@@ -433,8 +437,8 @@ li a:hover {
 }
 
 .gallery_img{
-    position: absolute;
-    top: 0;
+ 
+    top:0;
     left: 0;
     max-width: 25%;
     width: 100%;
@@ -442,6 +446,7 @@ li a:hover {
 }
 
 .view{
+    align-items: center;
     margin-top: 3rem;
     margin-left: 10rem ;
 }
@@ -452,19 +457,43 @@ li a:hover {
 .view a i{
     font-size: 1.5rem;
     padding-right: 1rem;
+    z-index: 444;
+    cursor: pointer;
 }
+
+
 .gallery-cards{
+   
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 2rem;
     margin-top: 2rem;
     column-gap: 3rem;
     row-gap: 3rem;
+   
   }
+  .view-btn{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    margin-right: 1rem;
+  }
+  .gallery-cards-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+    column-gap: 3rem;
+    row-gap: 3rem;
+   
+   
+  }
+
 
   .card{
     background-color: var(--card);
     border-radius: var(--card-border-radius);
+    z-index: 333;
     
 
   }
@@ -483,5 +512,6 @@ li a:hover {
     padding: 5px; 
     margin-top:auto  ;
   } 
+ 
   
   /*================END GALLERY PAGE==============*/
