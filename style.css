@@ -136,6 +136,9 @@ p {
     color: var(--description);
     font-size: 1rem;
 }
+h6 {
+    color: var(--description);
+}
 
 
 /*=============normlize===============*/
@@ -516,10 +519,27 @@ margin-right: 15rem;
     padding: 5px; 
     margin-top:auto  ;
   } 
+  .card-price:hover{
+    background-color: var(--btn-color);
+    border-radius: 10px;
+  /* padding: 10px 10px; */
+  border: 1.5px solid var(--description);
+  transition: all 0.3s ease-in-out ;
+}
   .price-text{
     color: var(--white);
     margin-right: .5rem;
   }
- 
-  
+
   /*================END GALLERY PAGE==============*/
+
+  /*================ART PAGE==============*/
+
+
+
+
+
+  
+  /*================END ART PAGE==============*/
+
+
