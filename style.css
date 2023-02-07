@@ -56,6 +56,16 @@ section {
     border-radius: 50px;
     transition: .4s cubic-bezier(0, 0, .8, .8);
 }
+.full-width{
+    width: 100%;
+}
+.m-b{
+    margin-bottom: 2rem;
+}
+.m-r{
+    margin-right: .5rem;
+}
+
 
 .btn:hover .circle {
     width: 80px;
@@ -633,9 +643,11 @@ li a:hover {
 /*================ CART PAGE==============*/
 
 .cart {
-    width: 100%;
-    justify-content: space-between;
+    max-width: 100%;
+ 
+
     align-items: center;
+
 }
 
 .cart h3 {
@@ -643,15 +655,18 @@ li a:hover {
     font-size: 2rem;
 }
 
+
 .shopping__cart {
-    max-width: 50%;
+ 
     width: 100%;
+    align-items: center;
+  
 }
 
 .shopping__cart-cards {
 
+max-width: 90%;
 
-    width: 100%;
 
 }
 
@@ -664,6 +679,7 @@ li a:hover {
     margin-top: 2rem;
     margin-bottom: 1rem;
     width: 100%;
+    max-width: 100%;
 
 }
 
@@ -726,16 +742,73 @@ li a:hover {
 }
 
 .shopping__pay {
-    max-width: 50%;
+    max-width: 60%;
+  
+
 
 }
-
-.shopping__pay-form {
-    max-width: 100%;
-
+.payment{
+    max-width: 40%;
+    width: 100%;
+    margin-top: 7rem;
 }
 
-.shopping__pay {
-    max-width: 70%;
+
+.payment__form{
+
+    width: 100%;
+
+    background-color: var(--card);  
+padding: 1rem;
+border-radius: var(--card-border-radius);
+
+
+}
+.payment__form p{
+    margin-bottom: 1rem;
+}
+
+
+.send__form-pey{
+    background-color: var(--btn-create);
+    color: var(--white);
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    text-align: center;
+width: 100%;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1px;
+    
+}
+.payment__form form input,.payment__form form select{
+    background-color: var(--input-feild);
+    border-radius: var(--input-border-radius);
+    padding-left: 1rem;
+    color: var(--form-backround);
+    height: 30px;
+    margin-bottom: 1rem;
+    width: 100%;
+  
+}
+.pay-radio{
+    column-gap: 2rem;
+    align-items: center;
+    width: 50%;
+    margin-top: 1rem;
+  
+
+}
+.pay-icon{
+   font-size: 1.8rem;
+   color: var(--white);
+   margin-left: .5rem;
+}
+.send__form-pey:hover{
+background-color: var(--white);
+color: var(--btn-create);
+border: 3px solid var(--btn-create);
+transition: .3s;
 
 }
