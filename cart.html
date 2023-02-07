@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- css link -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- icon remix link CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <!-- initialize AOS CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>Cart</title>
+</head>
+<!-- header -->
+<header>
+  <nav class="flex">
+    <div class="logo">
+      <img src="./artSpot-img/logo.png" alt="art spot" />
+    </div>
+    <div class="title">
+      <h1 class="header_heading">Cart</h1>
+    </div>
+    <a href="home.html" class="btn">
+      <span class="circle">
+        <span class="arrow"></span>
+        <span class="text">Back</span>
+      </span>
+    </a>
+  </nav>
+</header>
+
+<body>
+  <section>
+    <div class=" cart container flex">
+      <div class="shopping__cart ">
+        <h3>May bag</h3>
+
+        <div class="shopping__cart-cards">
+          <hr>
+          <div class="shopping__cart-card flex">
+            <div class="cart--img">
+              <img src="./artSpot-img/Rectangle 41.png" alt="">
+            </div>
+            <div class="cart--content">
+              <p class="art__name">solid women</p>
+              <p class="artist__name">By | erik</p>
+              <div class="inc__dec--btn">
+                <span class="minus">-</span>
+                <span class="num">1</span>
+                <span class="plus">+</span>
+              </div>
+              <button class="close-card"> <i class="ri-close-line "></i></button>
+            </div>
+          </div>
+          <div class="shopping__cart-card flex">
+            <div class="cart--img">
+              <img src="./artSpot-img/Rectangle 44.png" alt="">
+            </div>
+            <div class="cart--content">
+              <p class="art__name">solid women</p>
+              <p class="artist__name">By | erik</p>
+              <div class="inc__dec--btn">
+                <span class="minus">-</span>
+                <span class="num">1</span>
+                <span class="plus">+</span>
+              </div>
+              <button class="close-card"> <i class="ri-close-line "></i></button>
+             
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="shopping__pay">
+        <div class="shopping__pay-form">
+          <form action="" method="POST">
+            <div>
+              <div class="name-form flex">
+              <label for="fName"></label>
+              <input type="text" name="fName" id="fName" value="firstName" placeholder="first name"/>
+              <label for="lName"></label>
+              <input type="text" name="lName" id="lName" value="lastName" placeholder="last name"/>
+              </div>
+              <label for="email"></label>
+              <input type="email" name="email" id="email" value="email" placeholder="E-mail" />
+              <br>
+              <label for="phoneNumber"></label>
+              <input type="number" name="phoneNumber" id="phoneNumber" value="phoneNumber" placeholder="E-mail" />
+            </div>
+            <div>
+             
+            </div>
+            <div>
+              <button>Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- initialize AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>

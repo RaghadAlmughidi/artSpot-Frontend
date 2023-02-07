@@ -518,22 +518,23 @@ li a:hover {
 .card-content {
     justify-content: space-between;
     padding: 1rem;
-   
+
 
 }
 
 .card-price {
-gap: .5rem;
+    gap: .5rem;
     align-items: center;
     border: 0.5px dashed var(--description);
     border-radius: var(--card-border-radius);
-    padding:.5rem 1rem ;
+    padding: .5rem 1rem;
     width: fit-content;
- 
+
     text-align: center;
     cursor: pointer;
 }
-.card-price a{
+
+.card-price a {
     font-size: .89rem;
     margin-bottom: .20rem;
 }
@@ -559,9 +560,9 @@ gap: .5rem;
 .art_content {
     width: 100%;
     height: 100vh;
-  gap: 2rem;
+    gap: 2rem;
     align-items: center;
-    
+
 }
 
 .art_img {
@@ -575,9 +576,9 @@ gap: .5rem;
 .art_content-text {
     max-width: 40%;
     width: 100%;
-   
-  
-    
+
+
+
 
 
 }
@@ -601,12 +602,12 @@ gap: .5rem;
     justify-content: space-between;
     align-items: center;
     margin-top: 20%;
- 
+
 
 }
 
 .artist_details h3 {
-  color: var(--white);
+    color: var(--white);
 }
 
 .artist_img {
@@ -629,3 +630,112 @@ gap: .5rem;
 
 
 /*================END ART PAGE==============*/
+/*================ CART PAGE==============*/
+
+.cart {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart h3 {
+    color: var(--description);
+    font-size: 2rem;
+}
+
+.shopping__cart {
+    max-width: 50%;
+    width: 100%;
+}
+
+.shopping__cart-cards {
+
+
+    width: 100%;
+
+}
+
+.shopping__cart-card {
+
+    background-color: var(--card);
+    padding: 1rem;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 100%;
+
+}
+
+.cart--img {
+    padding: .5rem 0;
+    max-width: 200px;
+    width: 100%;
+}
+
+.cart--content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+
+
+    text-align: left;
+}
+
+.cart--content p {
+    font-size: 1.5rem;
+}
+
+.inc__dec--btn {
+    margin-top: 2rem;
+    height: 50px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--card);
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    width: 40%;
+}
+
+.inc__dec--btn span {
+    color: var(--white);
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.inc__dec--btn span.num {
+    font-size: 1rem;
+    border-right: 2px solid rgba(0, 0, 0, .2);
+    border-left: 2px solid rgba(0, 0, 0, .2);
+}
+.close-card {
+    position: absolute;
+    top: 2PX;
+    right: 2PX;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.shopping__pay {
+    max-width: 50%;
+
+}
+
+.shopping__pay-form {
+    max-width: 100%;
+
+}
+
+.shopping__pay {
+    max-width: 70%;
+
+}
