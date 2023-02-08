@@ -21,6 +21,7 @@
     --card-border-radius: 8px;
     --heading-color: #e6e6e6;
     --cardPopular-hover: #343434;
+    --admin-form: #ECECEC;
 }
 
 body {
@@ -825,3 +826,20 @@ border: 3px solid var(--btn-create);
 transition: .3s;
 
 }
+
+
+/*================END CART PAGE==============*/
+
+/*================CREATE PRODUCT PAGE==============*/
+
+.admin_img{
+    width: 80px;
+}
+.body_background{
+    background-color: var(--white);
+}
+
+
+
+
+/*================End CREATE PRODUCT PAGE==============*/
