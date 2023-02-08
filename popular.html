@@ -2,111 +2,110 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- css link -->
-    <link rel="stylesheet" href="style.css">
-    <!-- icon remix link CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <title>popular</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+      <!-- css link -->
+      <link rel="stylesheet" href="style.css">
+      <!-- icon remix link CDN -->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+      <!-- initialize AOS CDN -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <title>Popular Artist</title>
+  <!-- Demo styles -->
+  <style>
+  
+
+
+  </style>
 </head>
+<!-- header -->
+<header>
+    <nav class="flex">
+        <div class="logo">
+            <img src="./artSpot-img/logo.png" alt="art spot">
+        </div>
+        <div class="title">
+            <h1 class="header_heading">Popular</h1>
+        </div>
+       <a href="home.html" class="btn">
+        <span class="circle">
+            <span class="arrow"></span>
+            <span class="text">Back</span>
+        </span>
+     </a>
+    </nav>
+   
+</header>
 
 <body>
-    <header>
-        <nav class="flex">
-            <div class="logo">
-                <img src="./artSpot-img/logo.png" alt="art spot">
-            </div>
-            <div class="title">
-                <h1 class="header_heading">Popular</h1>
-            </div>
-            <a href="home.html" class="btn">
-                <span class="circle">
-                    <span class="arrow"></span>
-                    <span class="text">Back</span>
-                </span>
-            </a>
-        </nav>
-
-    </header>
-    <section  style="z-index: 1;">
-        <div class="popular container">
-            <div class="popular__artist ">
-                <div class="popular__artist-img">
-                    <a href=""><img src="./artSpot-img/artist2 2.png" alt=""></a>
-                      <h3>cawl</h3> 
-                      <p>ten-stedio .Spain</p> 
-                      <div class="popular__artist-content ">
-                     
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore quae sit nulla a
-                            dignissimos odio mollitia nihil magnam eveniet provident vero, hic repellendus aspernatur
-                            rem omnis molestias totam vitae!</p>
-                    </div>
+<section>
+    <div class="container popular">
+          <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="slide__content flex">
+                <img src="./artSpot-img/artist2 1.png" alt="">
+                <div class="slide__content-text" >
+                    <h3>Erik</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, culpa mollitia. Illum dolorem
+                        dicta nisi,
+                        error consequatur nihil expedita vel, iure itaque ex exercitationem est illo dolores hic voluptatum
+                        sapiente.
+                    </p>
                 </div>
-                <div class="popular__artist-img">
-                    <a href=""><img src="./artSpot-img/artist2 2.png" alt=""></a>
-                      <h3>cawl</h3> 
-                      <p>ten-stedio .Spain</p> 
-                      <div class="popular__artist-content ">
-                     
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore quae sit nulla a
-                            dignissimos odio mollitia nihil magnam eveniet provident vero, hic repellendus aspernatur
-                            rem omnis molestias totam vitae!</p>
-                    </div>
-                </div>
-                <div class="popular__artist-img">
-                    <a href=""><img src="./artSpot-img/artist2 3.png" alt=""></a>
-                   <h3>jek</h3>  
-                   <p>ten-stedio .Spain</p> 
-                   <div class="popular__artist-content">
-                       
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore quae sit nulla a
-                            dignissimos odio mollitia nihil magnam eveniet provident vero, hic repellendus aspernatur
-                            rem omnis molestias totam vitae!</p>
-                    </div>
-                </div>
-                <!-- <div class="popular__artist-img">
-                    <a href=""><img src="./artSpot-img/artist2 1.png" alt=""></a>
-                   <h3>bawla</h3> 
-                   <p>ten-stedio .Spain</p>  
-                   <div class="popular__artist-content">
-                       
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore quae sit nulla a
-                            dignissimos odio mollitia nihil magnam eveniet provident vero, hic repellendus aspernatur
-                            rem omnis molestias totam vitae!</p>
-                    </div>
-                </div> -->
-                <!-- <div class="popular__artist-img">
-                    <a href=""><img src="./artSpot-img/artist2 3.png" alt=""></a>
-                   <h3>jek</h3> 
-                   <p>ten-stedio .Spain</p>  
-                   <div class="popular__artist-content">
-                       
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore quae sit nulla a
-                            dignissimos odio mollitia nihil magnam eveniet provident vero, hic repellendus aspernatur
-                            rem omnis molestias totam vitae!</p>
-                    </div>
-                </div> -->
-                <!-- <div class="popular__artist-img">
-                    <a href=""><img src="./artSpot-img/artist2 2.png" alt=""></a>
-                   <h3>cawl</h3>  
-                   <p>ten-stedio .Spain</p> 
-                   <div class="popular__artist-content">
-                       
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore quae sit nulla a
-                            dignissimos odio mollitia nihil magnam eveniet provident vero, hic repellendus aspernatur
-                            rem omnis molestias totam vitae!</p>
-                    </div>
-                </div> -->
             </div>
         </div>
-    </section>
-    <img src="./artSpot-img/eclips1.png" alt="" class="ec-1" style="z-index: 1;">
-    <img src="./artSpot-img/eclips2.png" alt="" class="ec-2">
+        <div class="swiper-slide">
+            <div class="slide__content flex">
+                <img src="./artSpot-img/artist2 1.png" alt="">
+                <div class="slide__content-text">
+                    <h3>Erik</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, culpa mollitia. Illum dolorem
+                        dicta nisi,
+                        error consequatur nihil expedita vel, iure itaque ex exercitationem est illo dolores hic voluptatum
+                        sapiente.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slide__content flex">
+                <img src="./artSpot-img/artist2 1.png" alt="">
+                <div class="slide__content-text">
+                    <h3>Erik</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, culpa mollitia. Illum dolorem
+                        dicta nisi,
+                        error consequatur nihil expedita vel, iure itaque ex exercitationem est illo dolores hic voluptatum
+                        sapiente.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
 
-    <script src="./main.js"></script>
+    </div>
+</section>
+<img src="./artSpot-img/eclips1.png" alt="" class="ec-1" style="z-index: -1;">
+<img src="./artSpot-img/eclips2.png" alt="" class="ec-2" style="z-index: -1; top:20rem ;">
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      direction: "vertical",
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
 </body>
 
 </html>
