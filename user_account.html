@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- css link -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- icon remix link CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <!-- initialize AOS CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>Cart</title>
+</head>
+<!-- header -->
+<header>
+  <nav class="flex">
+    <div class="logo">
+      <img src="./artSpot-img/logo.png" alt="art spot" />
+    </div>
+    <div class="title">
+      <h1 class="header_heading">Account</h1>
+    </div>
+    <a href="home.html" class="btn">
+      <span class="circle">
+        <span class="arrow"></span>
+        <span class="text">Back</span>
+      </span>
+    </a>
+  </nav>
+</header>
+
+<body>
+  <section>
+    <div class="user_account">
+        <div class="user_account_btn">
+            <button class="logout_btn">Log out</button>
+        </div>
+
+        <div class="user_content flex">
+            <div class="user_order">
+                <div class="user_orders_info">
+                    <h1>Orders Info</h1>
+                    <table class="order_table">
+                        <tr class="table_head">
+                            <th><p>order number</p></th>
+                            <th><p>status</p></th>
+                        </tr>
+                        <tr class="table_row">
+                            <td>9929</td>
+                            <td><i class="ri-thumb-up-fill"></i></td>
+                        </tr>
+                        <tr class="table_row">
+                            <td>9929</td>
+                            <td><i class="ri-thumb-down-fill"></i></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+    
+            <div class="user_account">
+                <h1>Account</h1>
+    
+                <div class="user_account_form">
+                    <form action="" method="post">
+                        <div class="">
+                            <input type="password" name="password" class="pass_input full-width" placeholder="new password">
+                        </div>
+                        <div class="">
+                            <input type="password" name="conform_password" class="pass_input" placeholder="conform new password">
+                        </div>
+                            <button type="submit" class="Update_btn ">Update password</button>
+                    </form>
+                </div>
+            </div>
+    
+        </div>
+       
+    </div>
+  </section>
+
+  <!-- initialize AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>

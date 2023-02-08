@@ -22,6 +22,8 @@
     --heading-color: #e6e6e6;
     --cardPopular-hover: #343434;
     --admin-form: #ECECEC;
+    --logout-btn:#9F3535;
+
 }
 
 body {
@@ -790,7 +792,7 @@ border-radius: var(--card-border-radius);
     outline: none;
     border: none;
     text-align: center;
-width: 100%;
+    width: 100%;
     cursor: pointer;
     font-weight: 600;
     letter-spacing: 1px;
@@ -829,6 +831,106 @@ transition: .3s;
 
 
 /*================END CART PAGE==============*/
+
+/*================USER ACCOUNT PAGE==============*/
+
+.user_account{
+    align-self: center;
+    background-color: var(--card);
+    border-radius: var(--card-border-radius);
+    margin: 5rem;
+}
+.user_account_btn{
+    text-align: right;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+
+}
+.logout_btn{
+    background-color: var(--logout-btn);
+    color: var(--white);
+    border: none;
+    border-radius: var(--card-border-radius );
+    width: 15%;
+    text-align: center;
+    font-weight: 600;
+    padding: 0.5rem;
+    cursor: pointer;
+
+}
+.user_content{
+    display:flex ;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+.user_content h1{
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.user_orders_info{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.order_table{
+    font-size: 1.5rem;
+    color: var(--description);
+    border-spacing: 1rem;
+}
+.table_head{
+    
+}
+.table_row{
+    text-align: center;
+    background-color: #484848;
+    margin-bottom: 1rem;
+    width: 100%;
+    justify-content: space-between;
+}
+.table_row td{
+    border-radius: 1rem;
+}
+
+.user_account_form{
+    width: 100%;
+
+}
+.user_account_form  input{
+    margin-top:0.1rem ;
+    background-color: var(--input-feild);
+    border-radius: 9px;
+    padding-left: 1rem;
+    color: var(--form-backround);
+    height: 40px;
+    margin-bottom: 1rem;
+    width: 150%; 
+}
+
+
+.pass_input{
+    padding:5px;
+    width: 200%;
+    font-size: 1rem;
+
+}
+
+.Update_btn{
+    background-color: var(--btn-create);
+    color: var(--white);
+    border: none;
+    border-radius: var(--card-border-radius );
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    padding: 0.5rem;
+    cursor: pointer;
+    margin-top:1rem ;
+
+}
+
+/*================End USER ACCOUNT PAGE==============*/
 
 /*================CREATE PRODUCT PAGE==============*/
 
