@@ -10,13 +10,11 @@ for (var i = 0; i < li_elements.length; i++) {
     item_elements.forEach(function(item) {
       item.style.display = "none";
     });
-    if (li_value == "angular") {
+    if (li_value == "product") {
       document.querySelector("." + li_value).style.display = "block";
-    } else if (li_value == "nodejs") {
+    } else if (li_value == "orders") {
       document.querySelector("." + li_value).style.display = "block";
-    } else if (li_value == "reactjs") {
-      document.querySelector("." + li_value).style.display = "block";
-    } else if (li_value == "vuejs") {
+    } else if (li_value == "account") {
       document.querySelector("." + li_value).style.display = "block";
     } else {
       console.log("");
