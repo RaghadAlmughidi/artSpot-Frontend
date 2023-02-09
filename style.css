@@ -23,6 +23,7 @@
     --cardPopular-hover: #343434;
     --admin-form: #ECECEC;
     --logout-btn:#9F3535;
+    --admin-btn:#ECECEC;
 
 }
 
@@ -382,9 +383,7 @@ li a:hover {
     width: 100%;
     height: 100%;
 }
-.swiper-pagination-bullet{
-  
-}
+
 .swiper {
   width: 80%;
   height: 70vh;
@@ -429,16 +428,7 @@ li a:hover {
    
 }
 
-    @keyframes slidIn{
-        0%{
-          opacity: 0;
-            transform: translateY(-10px);
-        }
-        100%{
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
+
 .slide__content{
     max-width: 70%;
     align-items: center;
@@ -449,7 +439,16 @@ li a:hover {
 
   
 /*============animation*/
-.slide__content{}
+@keyframes slidIn{
+    0%{
+      opacity: 0;
+        transform: translateY(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 /*================END POPULAR PAGE==============*/
 
 /*================GALLERY PAGE==============*/
@@ -879,9 +878,7 @@ transition: .3s;
     color: var(--description);
     border-spacing: 1rem;
 }
-.table_head{
-    
-}
+
 .table_row{
     text-align: center;
     background-color: #484848;
@@ -945,3 +942,47 @@ transition: .3s;
 
 
 /*================End CREATE PRODUCT PAGE==============*/
+/*==================ADMIN PAGE==========================*/
+
+.admin_bg{
+    background-color:var(--white);
+}
+.admin_forms{
+    background-color: var(--white);
+}
+.wrapper_right{
+    background-color: var(--admin-form);
+}
+.wrapper_left ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+.wrapper_left ul li{
+background-color: var(--admin-btn);
+
+width: 200px;
+text-align: center;
+padding: 1rem 0;
+border-radius: 8px;
+font-weight: 600;
+color: var(--body-color);
+font-size: 1rem;
+cursor: pointer;
+
+}
+.wrapper_left ul li.active{
+    background-color: var(--btn-create);
+    color: var(--white);  
+}.wrapper_left ul li p{
+  
+color: var(--body-color);
+
+}
+
+
+.item >p{
+    color: var(--form-backround);
+}
