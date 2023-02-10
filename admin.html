@@ -2,131 +2,205 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- css link -->
-    <link rel="stylesheet" href="style.css">
-    <!-- icon remix link CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <!-- initialize AOS CDN -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Gallery</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- css link -->
+  <link rel="stylesheet" href="style.css">
+  <!-- icon remix link CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- initialize AOS CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>Admin</title>
 </head>
 <!-- header -->
 <header>
-    <nav class="flex">
-        <div class="logo">
-            <img src="./artSpot-img/logo.png" alt="art spot">
-        </div>
-        <div class="title">
-            <h1 class="header_heading">Admin</h1>
-        </div>
-        <a href="home.html" class="btn">
-            <span class="circle">
-                <span class="arrow"></span>
-                <span class="text">Back</span>
-            </span>
-        </a>
-    </nav>
+  <nav class="flex">
+    <div class="logo">
+      <img src="./artSpot-img/logo.png" alt="art spot">
+    </div>
+    <div class="title">
+      <h1 class="header_heading">Admin</h1>
+    </div>
+    <a href="home.html" class="btn">
+      <span class="circle">
+        <span class="arrow"></span>
+        <span class="text">Back</span>
+      </span>
+    </a>
+  </nav>
 
 </header>
 
 <body class="admin_bg">
-    <section>
+  <section>
 
-        <div class="container admin_forms">
+    <div class="container admin_forms">
 
-           
-                <div class="wrapper_left">
-                  <ul>
-                    <li data-li="product" class="active">
-                    Create product
-                    </li>
-                    <li data-li="orders">
-                      Orders
-                    </li>
-                    <li data-li="account">
-                      Account
-                    </li>
-                    
-                  </ul>
-                </div>
-                <div class="wrapper_right">
-                 
-                  <div class="container">
-                    <div class="item product">
-                      <div class="item_info">
-                       
-                        <h3>Product info</h3>
-                      </div>
-                      <form action="" method="post" class="product_form">
-                        <div class=" flex product" >
-                        <label for="product_name"></label>
-                        <input type="text"id="product_name" name="product_name" placeholder="product name">
-                        <textarea name="product_desc" id="product_desc" cols="30" rows="10" placeholder="product description"></textarea>
-                      </div>
-                        <div class="flex product_size"> 
-                          <p>Product size :</p>
-                           <input type="number" id="product_width" name="product_width" placeholder="width">X
-                           <input type="number" id="product_hight" name="product_hight" placeholder="hight">
-                          </div>
-                          <div class="flex product_price">
-                            <p>Product price :</p>
-                           <input type="number" id="product_price" name="product_price" placeholder="price">$
-                          </div>
-                          <div class="flex">
-                            <p>Product image: <small>!size shoulde be 200px x 200px</small></p> <input type="file">
-                          </div>
-                          <div class="artist_info">
-                            <h3>Artist info</h3>
-                          
-                            <div class="flex artist">
-                            <label for="artist_name"></label>
-                            <input type="text" id="artist_name" name="artist_name" placeholder="artist name">
-                            <p>Artist image: <small>!size shoulde be 200px x 200px</small></p> <input type="file">
-                          </div>
-                          </div>
-                          <button class="create_btn"  type="submit">create product</button>
-                      </form>
-                    </div>
-                    <div class="item orders" style="display: none;">
-                      <div class="item_info">
-                      
-                        <h3>Orders info</h3>
-                      </div>
-                      <p>Node.js is a platform built on Chrome's JavaScript runtime for easily building fast and scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time
-                        applications that run across distributed devices.</p>
-                      <p>Node.js is an open source, cross-platform runtime environment for developing server-side and networking applications. Node.js applications are written in JavaScript, and can be run within the Node.js runtime on OS X, Microsoft Windows, and Linux.</p>
-                      <p>Node.js also provides a rich library of various JavaScript modules which simplifies the development of web applications using Node.js to a great extent.</p>
-                    </div>
-                    <div class="item account" style="display: none;">
-                      <div class="item_info">
-                      
-                        <h3>Product info</h3>
-                      </div>
-                      <p>React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.</p>
-                      <p>Build encapsulated components that manage their own state, then compose them to make complex UIs.</p>
-                      <p>Since component logic is written in JavaScript instead of templates, you can easily pass rich data through your app and keep state out of the DOM.</p>
-                    </div>
-                    
-                  </div>
+
+      <div class="wrapper_left">
+        <ul>
+          <li data-li="product" class="active">
+            Create product
+          </li>
+          <li data-li="orders">
+            Orders
+          </li>
+          <li data-li="account">
+            Account
+          </li>
+
+        </ul>
+      </div>
+      <div class="wrapper_right">
+
+        <div class="container">
+          <div class="item product">
+            <div class="item_info">
+
+              <h3>Product info</h3>
+            </div>
+            <form action="" method="post" class="product_form">
+              <div class=" flex product">
+                <label for="product_name"></label>
+                <input type="text" id="product_name" name="product_name" placeholder="product name">
+                <textarea name="product_desc" id="product_desc" cols="30" rows="10"
+                  placeholder="product description"></textarea>
+              </div>
+              <div class="flex product_size">
+                <p>Product size :</p>
+                <input type="number" min="0" id="product_width" name="product_width" placeholder="width">X
+                <input type="number" min="0" id="product_hight" name="product_hight" placeholder="hight">
+              </div>
+              <div class="flex product_price">
+                <p>Product price :</p>
+                <input type="number" min="0" id="product_price" name="product_price" placeholder="price">$
+              </div>
+              <div class="flex">
+                <p>Product image: <small>!size shoulde be 200px x 200px</small></p> <input type="file">
+              </div>
+              <div class="artist_info">
+                <h3>Artist info</h3>
+
+                <div class="flex artist">
+                  <label for="artist_name"></label>
+                  <input type="text" id="artist_name" name="artist_name" placeholder="artist name">
+                  <p>Artist image: <small>!size shoulde be 200px x 200px</small></p> <input type="file">
                 </div>
               </div>
-        
+              <div class="create_btn-div">
+              <button class="create_btn" type="submit">create product</button>
+            </div>
+            </form>
+          </div>
+          <div class="item orders" style="display: none;">
+            <div class="item_info">
 
-    </section>
+              <h3>Orders info</h3>
+            </div>
+            <div class="status">
+              <div class="cards_status flex">
+                <div class="card_status Completed">
+                  <p>Complated</p>
+                  <p class="count">200</p>
+                </div>
+                <div class="card_status not_completed">
+                  <p>Not Complated</p>
+                  <p class="count">200</p>
+                </div>
+                <div class="card_status in_progress">
+                  <p>In Progress</p>
+                  <p class="count">200</p>
+                </div>
+              </div>
+            
+              <form action="" method="post"> 
+              <table class="status_table">
+                 <h3>Orders info</h3>
+               <tr>
+                <th >ID</th> 
+                  <th>Name</th>
+                <th>Order NO</th>
+             
+                <th>Status</th>
+               </tr>
+          
+              <tr>
+                <td>22</td>
+                <td>solid women</td>
+                <td>33233</td>
+                <td>
+              <label for="complated">
+                <input type="radio" name="statusValue" id="notCompleted" class="complete">
+              </label>
+              <label for="notComplated">
+                <input type="radio" name="statusValue" id="notComplated" class="not-complated">
+              </label>
+              <label for="progress">
+                <input type="radio" name="statusValue" id="progress" class="progress">
+              </label>
+              </td>
+                
+              </tr>
+              <tr>
+                <td>22</td>
+                <td>solid women</td>
+                <td>33233</td>
+                <td>
+              <label for="complated">
+                <input type="radio" name="statusValue" id="notCompleted" class="complete">
+              </label>
+              <label for="notComplated">
+                <input type="radio" name="statusValue" id="notComplated" class="not-complated">
+              </label>
+              <label for="progress">
+                <input type="radio" name="statusValue" id="progress" class="progress">
+              </label>
+              </td>
+                
+              </tr>
+              
+          
+              </table>
+              <div class="create_btn-div">
+                <button class="create_btn" type="submit">create product</button>
+              </div>
+  </form>
+
+            </div>
+
+
+          </div>
+          <div class="item account" style="display: none;">
+            <div class="item_info">
+
+              <h3>Product info</h3>
+            </div>
+            <p>React makes it painless to create interactive UIs. Design simple views for each state in your
+              application, and React will efficiently update and render just the right components when your data
+              changes.</p>
+            <p>Build encapsulated components that manage their own state, then compose them to make complex UIs.</p>
+            <p>Since component logic is written in JavaScript instead of templates, you can easily pass rich data
+              through your app and keep state out of the DOM.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </section>
 
 
 
 
-    <!-- initialize AOS -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script src="main.js"></script>
-    <script src="admin.js"></script>
+  <!-- initialize AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="main.js"></script>
+  <script src="admin.js"></script>
 </body>
 
 </html>

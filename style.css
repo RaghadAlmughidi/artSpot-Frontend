@@ -22,8 +22,10 @@
     --heading-color: #e6e6e6;
     --cardPopular-hover: #343434;
     --admin-form: #ECECEC;
-    --logout-btn:#9F3535;
-    --admin-btn:#ECECEC;
+    --logout-btn: #9F3535;
+    --admin-btn: #ECECEC;
+    --in-progress: #80be7e;
+    --status-table: #F5F5F5;
 
 }
 
@@ -60,13 +62,16 @@ section {
     border-radius: 50px;
     transition: .4s cubic-bezier(0, 0, .8, .8);
 }
-.full-width{
+
+.full-width {
     width: 100%;
 }
-.m-b{
+
+.m-b {
     margin-bottom: 2rem;
 }
-.m-r{
+
+.m-r {
     margin-right: .5rem;
 }
 
@@ -379,76 +384,81 @@ li a:hover {
 /*================END HOME PAGE==============*/
 /*================POPULAR PAGE==============*/
 
-.popular{
+.popular {
     width: 100%;
     height: 100%;
 }
 
 .swiper {
-  width: 80%;
-  height: 70vh;
+    width: 80%;
+    height: 70vh;
 }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: var(--cardPopular-hover);
-  display: flex;
-  justify-content: center;
-  border-radius:8px;
-  
+    text-align: center;
+    font-size: 18px;
+    background: var(--cardPopular-hover);
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+
 }
 
 .swiper-slide img {
-  display: block;
-  width: 60%;
-  height: 60%;
-  object-fit: cover;
-  border: 3px solid var(--white);
+    display: block;
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    border: 3px solid var(--white);
 }
-.slide__content-text{
+
+.slide__content-text {
     color: var(--heading-color);
     text-align: left;
- 
-  
- 
- 
+
+
+
+
 }
-.slide__content-text h3{
+
+.slide__content-text h3 {
     margin-bottom: 2rem;
     animation-name: slidIn;
     animation-duration: 2s;
     font-size: 3rem;
-  
+
 }
-.slide__content-text p{
+
+.slide__content-text p {
     animation-name: slidIn;
     animation-duration: 3s;
     animation-play-state: running;
-   
+
 }
 
 
-.slide__content{
+.slide__content {
     max-width: 70%;
     align-items: center;
     column-gap: 2rem;
 
-  
+
 }
 
-  
+
 /*============animation*/
-@keyframes slidIn{
-    0%{
-      opacity: 0;
+@keyframes slidIn {
+    0% {
+        opacity: 0;
         transform: translateY(-10px);
     }
-    100%{
+
+    100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
+
 /*================END POPULAR PAGE==============*/
 
 /*================GALLERY PAGE==============*/
@@ -659,7 +669,7 @@ li a:hover {
 
 .cart {
     max-width: 100%;
- 
+
 
     align-items: center;
 
@@ -672,15 +682,15 @@ li a:hover {
 
 
 .shopping__cart {
- 
+
     width: 100%;
     align-items: center;
-  
+
 }
 
 .shopping__cart-cards {
 
-max-width: 90%;
+    max-width: 90%;
 
 
 }
@@ -746,6 +756,7 @@ max-width: 90%;
     border-right: 2px solid rgba(0, 0, 0, .2);
     border-left: 2px solid rgba(0, 0, 0, .2);
 }
+
 .close-card {
     position: absolute;
     top: 2PX;
@@ -758,33 +769,35 @@ max-width: 90%;
 
 .shopping__pay {
     max-width: 60%;
-  
+
 
 
 }
-.payment{
+
+.payment {
     max-width: 40%;
     width: 100%;
     margin-top: 7rem;
 }
 
 
-.payment__form{
+.payment__form {
 
     width: 100%;
 
-    background-color: var(--card);  
-padding: 1rem;
-border-radius: var(--card-border-radius);
+    background-color: var(--card);
+    padding: 1rem;
+    border-radius: var(--card-border-radius);
 
 
 }
-.payment__form p{
+
+.payment__form p {
     margin-bottom: 1rem;
 }
 
 
-.send__form-pey{
+.send__form-pey {
     background-color: var(--btn-create);
     color: var(--white);
     padding: 1rem 2rem;
@@ -795,9 +808,11 @@ border-radius: var(--card-border-radius);
     cursor: pointer;
     font-weight: 600;
     letter-spacing: 1px;
-    
+
 }
-.payment__form form input,.payment__form form select{
+
+.payment__form form input,
+.payment__form form select {
     background-color: var(--input-feild);
     border-radius: var(--input-border-radius);
     padding-left: 1rem;
@@ -805,26 +820,29 @@ border-radius: var(--card-border-radius);
     height: 30px;
     margin-bottom: 1rem;
     width: 100%;
-  
+
 }
-.pay-radio{
+
+.pay-radio {
     column-gap: 2rem;
     align-items: center;
     width: 50%;
     margin-top: 1rem;
-  
+
 
 }
-.pay-icon{
-   font-size: 1.8rem;
-   color: var(--white);
-   margin-left: .5rem;
+
+.pay-icon {
+    font-size: 1.8rem;
+    color: var(--white);
+    margin-left: .5rem;
 }
-.send__form-pey:hover{
-background-color: var(--white);
-color: var(--btn-create);
-border: 3px solid var(--btn-create);
-transition: .3s;
+
+.send__form-pey:hover {
+    background-color: var(--white);
+    color: var(--btn-create);
+    border: 3px solid var(--btn-create);
+    transition: .3s;
 
 }
 
@@ -833,43 +851,51 @@ transition: .3s;
 
 /*================USER PAGE==============*/
 
-.user_account{
+.user_account {
     background-color: var(--card);
     border-radius: var(--card-border-radius);
     margin: 5rem 10rem 5rem 10rem;
 }
-.user_account_btn{
-   justify-content: flex-end;
-   padding-top: 2rem;
-   padding-right: 1rem;
+
+.user_account_btn {
+    justify-content: flex-end;
+    padding-top: 2rem;
+    padding-right: 1rem;
 }
-.logout_btn{
+
+.logout_btn {
     background-color: var(--logout-btn);
     color: var(--white);
     border: none;
-    border-radius: var(--card-border-radius );
+    border-radius: var(--card-border-radius);
     text-align: center;
     font-weight: 600;
     cursor: pointer;
     width: 10%;
     padding: 1rem;
 }
-.user_content{
+
+.user_content {
     align-items: center;
     justify-content: space-between;
     padding-left: 3rem;
     padding-right: 3rem;
 
 }
-.user_content h1{
+
+.user_content h1 {
     align-items: flex-start;
     font-size: 2rem;
     text-align: left;
     margin-bottom: 1rem;
 }
-.user_orders_info{
+
+.orders h3{
+    margin-left: 4rem;
+    margin-bottom: 1rem;
 }
-.order_table{
+
+.order_table {
     font-size: 1.5rem;
     color: var(--description);
     border-spacing: 1.5rem;
@@ -877,7 +903,7 @@ transition: .3s;
 
 }
 
-.table_row{
+.table_row {
     justify-content: space-between;
     text-align: left;
     background-color: #484848;
@@ -886,45 +912,45 @@ transition: .3s;
     border-radius: 1rem;
 
 }
-.user_account{
-    
-}
 
-.user_account_form{
+.user_account {}
+
+.user_account_form {
     width: 100%;
 
 }
-.user_account_form  input{
-    margin-top:0.1rem ;
+
+.user_account_form input {
+    margin-top: 0.1rem;
     background-color: var(--input-feild);
     border-radius: 9px;
     padding-left: 1rem;
     color: var(--form-backround);
     height: 40px;
     margin-bottom: 1rem;
-    width: 150%; 
+    width: 150%;
 }
 
 
-.pass_input{
-    padding:5px;
+.pass_input {
+    padding: 5px;
     width: 200%;
     font-size: 1rem;
 
 }
 
-.Update_btn{
-    
+.Update_btn {
+
     background-color: var(--btn-create);
     color: var(--white);
     border: none;
-    border-radius: var(--card-border-radius );
+    border-radius: var(--card-border-radius);
     width: 100%;
     text-align: center;
     font-weight: 600;
     padding: 0.5rem;
     cursor: pointer;
-    margin-top:1rem ;
+    margin-top: 1rem;
 
 }
 
@@ -932,61 +958,71 @@ transition: .3s;
 
 /*==================ADMIN PAGE==========================*/
 
-.admin_bg{
-    background-color:var(--white);
-}
-.admin_forms{
+.admin_bg {
     background-color: var(--white);
 }
-.wrapper_right{
+
+.admin_forms {
+    background-color: var(--white);
+}
+
+.wrapper_right {
     background-color: var(--admin-form);
 }
-.wrapper_left ul{
+
+.wrapper_left ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
     margin-bottom: 1rem;
 }
-.wrapper_left ul li{
-background-color: var(--admin-btn);
 
-width: 200px;
-text-align: center;
-padding: 1rem 0;
-border-radius: 8px;
-font-weight: 600;
-color: var(--body-color);
-font-size: 1rem;
-cursor: pointer;
+.wrapper_left ul li {
+    background-color: var(--admin-btn);
+
+    width: 200px;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 8px;
+    font-weight: 600;
+    color: var(--body-color);
+    font-size: 1rem;
+    cursor: pointer;
 
 }
-.wrapper_left ul li.active{
+
+.wrapper_left ul li.active {
     background-color: var(--btn-create);
-    color: var(--white);  
-}.wrapper_left ul li p{
-  
-color: var(--body-color);
+    color: var(--white);
+}
+
+.wrapper_left ul li p {
+
+    color: var(--body-color);
 
 }
 
 
-.item >p{
+.item>p {
     color: var(--form-backround);
 }
+
 /*==================create product*/
-.product_form{
-  
-  
-   text-align: left;
+.product_form {
+
+
+    text-align: left;
 }
 
-.product_form p{
-    color: var(--card)!important;
-    margin-right: 1rem; 
-  
+.product_form p {
+    color: var(--card) !important;
+    margin-right: 1rem;
+
 }
-.product_form input,.product_form textarea{
+
+.product_form input,
+.product_form textarea {
     padding: .5rem;
     border-radius: var(--input-border-radius);
 
@@ -994,37 +1030,51 @@ color: var(--body-color);
     border: none;
 
 }
-.product{
-    flex-direction: column; 
+
+.product {
+    flex-direction: column;
     row-gap: 1rem;
     margin-bottom: 1rem;
 
 }
-.product_size{
+
+.product_size {
     row-gap: 1rem;
     gap: 1rem;
     margin-bottom: 1rem;
     /* align-items: center; */
 }
-.product_size > input,.product_price > input{
+
+.product_size>input,
+.product_price>input {
     width: 100px;
-  
+
+
+}
+
+.product_price>input {
+    margin: 0 1rem .5rem .5rem;
+    margin-bottom: 1rem;
+}
+
+.artist {
     
-}
-.product_price > input{
-      margin-right: .5rem;
-      margin-bottom: 1rem;
-}
-.artist{
-column-gap: 1rem;
     align-items: center;
     margin-bottom: 1rem;
 }
-.artist input:first-child{
+
+.artist input:first-child {
     width: 200px;
     height: 40px;
+    margin-right: 0;
+    
  
+
 }
+.artist input{
+    margin-right: 1rem;
+}
+
 input[type=file]::file-selector-button {
     margin-right: 20px;
     border: none;
@@ -1034,15 +1084,18 @@ input[type=file]::file-selector-button {
     color: #fff;
     cursor: pointer;
     transition: background .2s ease-in-out;
-  }
-  
-  input[type=file]::file-selector-button:hover,.create_btn:hover {
-    background: #000;
-   transform: scale(1.1);
-   transition: .3s;
-  }
+}
 
-  .create_btn{
+input[type=file]::file-selector-button:hover,
+.create_btn:hover {
+    background: #000;
+    transform: scale(1.1);
+    transition: .3s;
+}
+.create_btn-div{
+     text-align: center; 
+}
+.create_btn {
     color: var(--admin-btn);
     background-color: var(--btn-create);
     width: 250px;
@@ -1052,5 +1105,114 @@ input[type=file]::file-selector-button {
     font-size: 1.20rem;
     font-weight: bold;
     margin-top: 3rem;
-   margin-left: 40%;
-  }
+  
+    
+}
+
+
+/*==========card status*/
+.cards_status {
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.cards_status>.card_status {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    width: 200px;
+    height: 100px;
+    row-gap: 1rem;
+    padding: 1rem 0rem 1rem;
+    color: var(--white);
+
+    background-color: var(--btn-create);
+
+    margin-top: 1rem;
+
+}
+
+.count {
+    background-color: #3b3b3b;
+    padding: .20rem 2rem;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    opacity: .9;
+}
+
+.card_status.not_completed {
+    background-color: var(--logout-btn);
+
+}
+
+.card_status.in_progress {
+    background-color: var(--in-progress);
+}
+
+.card_status p {
+    color: var(--white);
+    color: var(--white);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+
+
+.status_table {
+
+text-align: center;
+    width: 90%;
+    padding: 0 1rem;
+    border-spacing:0em 1em;;
+    row-gap: 1rem;
+    margin:  0 auto;
+}
+
+
+.status_table th {
+    
+    padding-left: 1rem;
+}
+
+.status_table td {
+    width: fit-content;
+    background-color: var(--status-table);
+
+    
+    margin-bottom: 1rem;
+    padding: .5rem  .5rem .5rem 1rem;
+    
+
+}
+.status_table input{
+    -webkit-appearance: none;
+    background-color: #fafafa;
+    border: 1px solid #cacece;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+    padding: 10px;
+    border-radius: 50px;
+    display: inline-block;
+   gap: 10px;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    
+}
+input[type=radio].complete{
+    background-color: var(--btn-create);
+}
+input[type=radio].not-complated{
+    background-color: var(--logout-btn);
+}
+input[type=radio].progress{
+    background-color: var(--in-progress);
+}
+.status_table input:checked {
+
+
+  border: 2px solid #000000;  
+}
