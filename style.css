@@ -1216,3 +1216,23 @@ input[type=radio].progress{
 
   border: 2px solid #000000;  
 }
+
+.account input{
+   margin: 0 auto;
+    padding: 1rem;
+    border-radius: var(--input-border-radius);
+
+    outline: none;
+    border: none;
+    display: block;
+    width: 80%;
+    margin-top: 1rem;
+
+}
+.logout_btn-div{
+    text-align: right;
+}
+.logout{
+    background-color: var(--logout-btn);
+    width: 160px;
+}

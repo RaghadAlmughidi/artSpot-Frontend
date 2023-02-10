@@ -89,8 +89,8 @@
                 </div>
               </div>
               <div class="create_btn-div">
-              <button class="create_btn" type="submit">create product</button>
-            </div>
+                <button class="create_btn" type="submit">create product</button>
+              </div>
             </form>
           </div>
           <div class="item orders" style="display: none;">
@@ -113,59 +113,59 @@
                   <p class="count">200</p>
                 </div>
               </div>
-            
-              <form action="" method="post"> 
-              <table class="status_table">
-                 <h3>Orders info</h3>
-               <tr>
-                <th >ID</th> 
-                  <th>Name</th>
-                <th>Order NO</th>
-             
-                <th>Status</th>
-               </tr>
-          
-              <tr>
-                <td>22</td>
-                <td>solid women</td>
-                <td>33233</td>
-                <td>
-              <label for="complated">
-                <input type="radio" name="statusValue" id="notCompleted" class="complete">
-              </label>
-              <label for="notComplated">
-                <input type="radio" name="statusValue" id="notComplated" class="not-complated">
-              </label>
-              <label for="progress">
-                <input type="radio" name="statusValue" id="progress" class="progress">
-              </label>
-              </td>
-                
-              </tr>
-              <tr>
-                <td>22</td>
-                <td>solid women</td>
-                <td>33233</td>
-                <td>
-              <label for="complated">
-                <input type="radio" name="statusValue" id="notCompleted" class="complete">
-              </label>
-              <label for="notComplated">
-                <input type="radio" name="statusValue" id="notComplated" class="not-complated">
-              </label>
-              <label for="progress">
-                <input type="radio" name="statusValue" id="progress" class="progress">
-              </label>
-              </td>
-                
-              </tr>
-              
-          
-              </table>
-              <div class="create_btn-div">
-                <button class="create_btn" type="submit">create product</button>
-              </div>
-  </form>
+
+              <form action="" method="post">
+                <table class="status_table">
+                  <h3>Orders info</h3>
+                  <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Order NO</th>
+
+                    <th>Status</th>
+                  </tr>
+
+                  <tr>
+                    <td>22</td>
+                    <td>solid women</td>
+                    <td>33233</td>
+                    <td>
+                      <label for="complated">
+                        <input type="radio" name="statusValue" id="notCompleted" class="complete">
+                      </label>
+                      <label for="notComplated">
+                        <input type="radio" name="statusValue" id="notComplated" class="not-complated">
+                      </label>
+                      <label for="progress">
+                        <input type="radio" name="statusValue" id="progress" class="progress">
+                      </label>
+                    </td>
+
+                  </tr>
+                  <tr>
+                    <td>22</td>
+                    <td>solid women</td>
+                    <td>33233</td>
+                    <td>
+                      <label for="complated">
+                        <input type="radio" name="statusValue" id="notCompleted" class="complete">
+                      </label>
+                      <label for="notComplated">
+                        <input type="radio" name="statusValue" id="notComplated" class="not-complated">
+                      </label>
+                      <label for="progress">
+                        <input type="radio" name="statusValue" id="progress" class="progress">
+                      </label>
+                    </td>
+
+                  </tr>
+
+
+                </table>
+                <div class="create_btn-div">
+                  <button class="create_btn" type="submit">update status</button>
+                </div>
+              </form>
 
             </div>
 
@@ -174,14 +174,20 @@
           <div class="item account" style="display: none;">
             <div class="item_info">
 
-              <h3>Product info</h3>
+              <h3>Account info</h3>
             </div>
-            <p>React makes it painless to create interactive UIs. Design simple views for each state in your
-              application, and React will efficiently update and render just the right components when your data
-              changes.</p>
-            <p>Build encapsulated components that manage their own state, then compose them to make complex UIs.</p>
-            <p>Since component logic is written in JavaScript instead of templates, you can easily pass rich data
-              through your app and keep state out of the DOM.</p>
+            <form action="" method="post">
+              <label for="password"></label>
+              <input type="password" id="password" name="password" placeholder="New password">
+              <label for="rePassword"></label>
+              <input type="password" id="rePassword" name="rePassword" placeholder="confirm new password">
+              <div class="create_btn-div">
+                <button class="create_btn" type="submit">update password</button>
+              </div>
+              <div class="logout_btn-div">
+                <button class="logout create_btn" type="submit">Log out</button>
+              </div>
+            </form>
           </div>
 
         </div>
