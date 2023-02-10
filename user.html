@@ -34,38 +34,44 @@
 <body>
   <section>
     <div class="user_account">
-        <div class="user_account_btn">
+
+        <div class="user_account_btn flex">
             <button class="logout_btn">Log out</button>
         </div>
 
-        <div class="user_content flex">
+        <div class="user_content flex ">
             <div class="user_order">
                 <div class="user_orders_info">
                     <h1>Orders Info</h1>
                     <table class="order_table">
                         <tr class="table_head">
-                            <th><p>order number</p></th>
-                            <th><p>status</p></th>
+                            <td><p>order number</p></td>
+                            <td><p>status</p></td>
                         </tr>
-                        <tr class="table_row">
-                            <td>9929</td>
-                            <td><i class="ri-thumb-up-fill"></i></td>
+                        <tr class="">
+                            <td class="table_row flex " colspan="2">
+                              <p>9929</p>
+                              <p><i class="ri-thumb-up-fill"></i></p>
+                            </td>
                         </tr>
-                        <tr class="table_row">
-                            <td>9929</td>
-                            <td><i class="ri-thumb-down-fill"></i></td>
-                        </tr>
+                        <tr class="">
+                          <td class="table_row flex " colspan="2">
+                            <p>9929</p>
+                            <p><i class="ri-thumb-down-fill"></i></p>
+                          </td>
+                      </tr>
                     </table>
                 </div>
             </div>
     
             <div class="user_account">
-                <h1>Account</h1>
     
                 <div class="user_account_form">
+                  <h1>Account</h1>
+
                     <form action="" method="post">
                         <div class="">
-                            <input type="password" name="password" class="pass_input full-width" placeholder="new password">
+                            <input type="password" name="password" class="pass_input" placeholder="new password">
                         </div>
                         <div class="">
                             <input type="password" name="conform_password" class="pass_input" placeholder="conform new password">

@@ -831,63 +831,63 @@ transition: .3s;
 
 /*================END CART PAGE==============*/
 
-/*================USER ACCOUNT PAGE==============*/
+/*================USER PAGE==============*/
 
 .user_account{
-    align-self: center;
     background-color: var(--card);
     border-radius: var(--card-border-radius);
-    margin: 5rem;
+    margin: 5rem 10rem 5rem 10rem;
 }
 .user_account_btn{
-    text-align: right;
-    margin-right: 1rem;
-    margin-top: 1rem;
-    padding: 1rem;
-
+   justify-content: flex-end;
+   padding-top: 2rem;
+   padding-right: 1rem;
 }
 .logout_btn{
     background-color: var(--logout-btn);
     color: var(--white);
     border: none;
     border-radius: var(--card-border-radius );
-    width: 15%;
     text-align: center;
     font-weight: 600;
-    padding: 0.5rem;
     cursor: pointer;
-
+    width: 10%;
+    padding: 1rem;
 }
 .user_content{
-    display:flex ;
-    justify-content: space-around;
-    width: 100%;
     align-items: center;
+    justify-content: space-between;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
 }
 .user_content h1{
+    align-items: flex-start;
     font-size: 2rem;
     text-align: left;
     margin-bottom: 1rem;
 }
 .user_orders_info{
-    width: 100%;
-    margin-bottom: 2rem;
 }
 .order_table{
     font-size: 1.5rem;
     color: var(--description);
-    border-spacing: 1rem;
+    border-spacing: 1.5rem;
+    width: 160%;
+
 }
 
 .table_row{
-    text-align: center;
-    background-color: #484848;
-    margin-bottom: 1rem;
-    width: 100%;
     justify-content: space-between;
-}
-.table_row td{
+    text-align: left;
+    background-color: #484848;
+    width: 130%;
+    padding: 0.5rem;
     border-radius: 1rem;
+
+}
+.user_account{
+    
 }
 
 .user_account_form{
@@ -914,6 +914,7 @@ transition: .3s;
 }
 
 .Update_btn{
+    
     background-color: var(--btn-create);
     color: var(--white);
     border: none;
@@ -927,21 +928,8 @@ transition: .3s;
 
 }
 
-/*================End USER ACCOUNT PAGE==============*/
+/*================End USER PAGE==============*/
 
-/*================CREATE PRODUCT PAGE==============*/
-
-.admin_img{
-    width: 80px;
-}
-.body_background{
-    background-color: var(--white);
-}
-
-
-
-
-/*================End CREATE PRODUCT PAGE==============*/
 /*==================ADMIN PAGE==========================*/
 
 .admin_bg{
