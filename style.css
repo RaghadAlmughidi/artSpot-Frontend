@@ -587,6 +587,60 @@ li a:hover {
     margin-right: .5rem;
 }
 
+.circle1{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.circle2{
+    width: 120px;
+    height: 120px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart_circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    background-color: var(--card);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart_size{
+    font-size: 4rem;
+}
+.num{
+    position: absolute;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    
+}
+.num_circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #46D082;
+    text-align: center;
+    
+
+}
+
+.circle2:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .3s;
+}
+.cart_circle:hover{
+    background-color: var(--btn-color);
+}
+
+
 /*================END GALLERY PAGE==============*/
 
 /*================ART PAGE==============*/
