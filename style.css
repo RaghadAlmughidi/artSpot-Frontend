@@ -265,7 +265,7 @@ li a:hover {
 
 /*===============nav bar responsive=============*/
 
-@media (max-width:35em) {
+@media (max-width:584px) {
     .primary_navigation {
         opacity: 0;
     }
@@ -381,7 +381,44 @@ li a:hover {
     height: 100vh;
 }
 
-
+@media (max-width: 1047px) {
+    .home__content-text h1{
+        font-size: 2rem;
+    }
+    .home__content-text p{
+        font-size: .89;
+    }
+    .home__img {
+        max-width: 40%;
+      
+    }
+    .home__content-text {
+        margin-bottom: 3rem;
+    }
+}
+@media (max-width: 800px) {
+    .container {
+        padding: 3rem 5%;
+    }
+    .home {
+      flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        text-align: left;
+    } .home__content{
+        order: 1; 
+              max-width: 80%;
+              margin-left: 1rem;
+    }
+   .home__img{
+    max-width: 80%;
+   }
+    .line-vartical{
+        display: none;
+    }
+    
+}
 /*================END HOME PAGE==============*/
 /*================POPULAR PAGE==============*/
 
