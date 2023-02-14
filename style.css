@@ -588,6 +588,8 @@ li a:hover {
 }
 
 .circle1{
+    position: sticky;
+    bottom: 0;
     display: flex;
     justify-content: flex-end;
 
