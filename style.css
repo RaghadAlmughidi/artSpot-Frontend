@@ -26,6 +26,7 @@
     --admin-btn: #ECECEC;
     --in-progress: #80be7e;
     --status-table: #F5F5F5;
+    --row-color:#484848;
 
 }
 
@@ -906,108 +907,70 @@ li a:hover {
 /*================END CART PAGE==============*/
 
 /*================USER PAGE==============*/
-
-.user_account {
+.background__user{
     background-color: var(--card);
+    padding: 1rem 2rem;
     border-radius: var(--card-border-radius);
-    margin: 5rem 10rem 5rem 10rem;
 }
-
-.user_account_btn {
-    justify-content: flex-end;
-    padding-top: 2rem;
-    padding-right: 1rem;
+.logout-btn{
+    text-align: right;
+    margin-bottom: 2rem;
 }
-
-.logout_btn {
-    background-color: var(--logout-btn);
-    color: var(--white);
-    border: none;
-    border-radius: var(--card-border-radius);
-    text-align: center;
-    font-weight: 600;
-    cursor: pointer;
-    width: 10%;
-    padding: 1rem;
+.parent__order{
+    justify-content: space-between;
+    width: 100%;
 }
-
-.user_content {
+.parent__order h1{
+font-size: 1.5rem;
+font-weight: 400;
+}
+.order-info{
+    max-width: 40%;
+    width: 100%; 
+}
+.order-info h1{
+    margin-bottom: 2rem;
+}
+.table-tilte-row{
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
-    padding-left: 3rem;
-    padding-right: 3rem;
-
 }
-
-.user_content h1 {
-    align-items: flex-start;
-    font-size: 2rem;
-    text-align: left;
+.table-data-row{
+    margin-top: 0rem;
+    padding: 1rem 0;
+        
+}
+.table-data-content{
+    justify-content: space-around;
     margin-bottom: 1rem;
-}
-
-.orders h3{
-    margin-left: 4rem;
-    margin-bottom: 1rem;
-}
-
-.order_table {
-    font-size: 1.5rem;
-    color: var(--description);
-    border-spacing: 1.5rem;
-    width: 160%;
-
-}
-
-.table_row {
-    justify-content: space-between;
-    text-align: left;
-    background-color: #484848;
-    width: 130%;
-    padding: 0.5rem;
-    border-radius: 1rem;
-
-}
-
-.user_account {}
-
-.user_account_form {
-    width: 100%;
-
-}
-
-.user_account_form input {
-    margin-top: 0.1rem;
-    background-color: var(--input-feild);
-    border-radius: 9px;
-    padding-left: 1rem;
-    color: var(--form-backround);
-    height: 40px;
-    margin-bottom: 1rem;
-    width: 150%;
-}
-
-
-.pass_input {
-    padding: 5px;
-    width: 200%;
+    background-color: var(--row-color);
+    padding: .5rem 0;
+    align-items: center;
+    border-radius: 30px;
     font-size: 1rem;
-
+    
 }
+.ri-thumb-down-fill{
+   color: #e74c3c;
+   
+ 
+}
+.ri-thumb-up-fill{
+    color: #2fcc71;
+}
+.account{
 
-.Update_btn {
-
-    background-color: var(--btn-create);
-    color: var(--white);
-    border: none;
-    border-radius: var(--card-border-radius);
+  
+    max-width: 50%;
     width: 100%;
-    text-align: center;
-    font-weight: 600;
-    padding: 0.5rem;
-    cursor: pointer;
-    margin-top: 1rem;
-
+}
+.acount-info h1{
+    margin-left: 3.5rem;
+    margin-bottom: 4rem;
+}
+#user-create-btn{
+    text-align: right;
+    margin-right: 3.5rem;
 }
 
 /*================End USER PAGE==============*/
