@@ -293,7 +293,7 @@ padding: .5rem 1rem;
 
     .nav-menu {
         position: absolute;
-       opacity: 0;
+       display: none;
         top: 100px;
         gap: 0;
     /* From https://css.glass */
@@ -318,11 +318,12 @@ backdrop-filter: blur(6.4px);
     }
     .item a{
         font-size: 1.5rem;
+        font-weight: bold;
       
     }
 
     .nav-menu.active {
-    opacity: 1;
+   display: block;
     }
 }
 
