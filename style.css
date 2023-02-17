@@ -269,6 +269,12 @@ padding: .5rem 1rem;
 
 
 @media(max-width:768px) {
+    header {
+
+        padding: 1rem .5rem;
+       
+    
+    }
     .humbergur {
         display: block;
     }
@@ -297,7 +303,7 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(6.4px);
 -webkit-backdrop-filter: blur(6.4px);
         flex-direction: column;
-        width: 50%;
+        width: 100%;
      height: 100vh;
         text-align: center;
         transition: .5s;
