@@ -1,16 +1,12 @@
+const humbergur = document.querySelector(".humbergur");
+const navMenu=document.querySelector(".nav-menu");
+humbergur.addEventListener("click",()=>{
+    humbergur.classList.toggle("active");
+    navMenu.classList.toggle("active");
+});
 
-let openMenu = document.querySelector('.open');
-let closeMenu = document.querySelector('.close');
-let ul = document.querySelector('ul');
-let itemLink = document.querySelector('.item-link');
-let backIcon=document.querySelector('.back__icon');
-openMenu.addEventListener ('click',()=>{ 
-
-    ul.classList.add('active');
-})
-closeMenu.addEventListener ('click',()=>{ 
-
-    ul.classList.remove('active');
-    
-
-})
+document.querySelectorAll(".item-link").forEach(n=>
+    n.addEventListener("click",()=>{
+        humbergur.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    }))
