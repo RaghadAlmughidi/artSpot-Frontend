@@ -294,7 +294,7 @@ padding: .5rem 1rem;
     .nav-menu {
         position: absolute;
        opacity: 0;
-        top: 70px;
+        top: 100px;
         gap: 0;
     /* From https://css.glass */
 background: rgba(255, 255, 255, 0.27);
@@ -303,7 +303,7 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(6.4px);
 -webkit-backdrop-filter: blur(6.4px);
         flex-direction: column;
-        width: 100%;
+        width: 100vw;
      height: 100vh;
         text-align: center;
         transition: .5s;
