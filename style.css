@@ -533,6 +533,96 @@ backdrop-filter: blur(6.4px);
     }
 }
 
+@media(max-width:1243px){
+    .slide__content {
+        max-width: 80%;
+   
+    }
+    .slide__content-text h3 {
+        margin-bottom: 2rem;
+     
+        font-size: 2rem;
+    
+    }
+}
+
+@media(max-width:942px){
+    .slide__content {
+        max-width: 90%;
+   
+    }
+    .swiper {
+        width: 90%;
+        height: 70vh;
+    }
+    
+    
+}
+@media(max-width:942px){
+    .swiper {
+        width: 80%;
+        height: 70vh;
+    }
+    
+ .slide__content  {
+    flex-direction: column;
+   text-align: center;
+
+   padding: 1rem;
+ } 
+ .slide__content-text {
+max-width: 90%;
+    text-align: center;
+
+
+
+
+}
+
+.slide__content-text h3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+ 
+    font-size: 2rem;
+
+}
+
+
+}
+@media(max-width:450px){
+  
+.slide__content-text h3 {
+  
+    margin-bottom: .5rem;
+ 
+    font-size: 2rem;
+    text-align: left;
+
+} 
+.slide__content-text p{
+    font-size: 1rem;
+    text-align: left;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border: 3px solid var(--white);
+} 
+.swiper {
+    width: 90%;
+    height: 100vh;
+}
+
+.ec-1,.ec-2{
+    display: none;
+}
+}
+
+
+
+
 /*================END POPULAR PAGE==============*/
 
 /*================GALLERY PAGE==============*/
