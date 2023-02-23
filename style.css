@@ -1202,6 +1202,52 @@ max-width: 90%;
     text-align: right;
     margin-right: 3.5rem;
 }
+@media(max-width:769px){
+    .parent__order {
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .order-info {
+        max-width: 100%;
+        width: 100%;
+    }
+    .account {
+
+
+        max-width: 100%;
+        width: 100%;
+    }
+    .background__user {
+     
+        background-color: var(--card);
+        padding: 1rem 2rem;
+        border-radius: var(--card-border-radius);
+    }
+    .user{
+        margin: 0 auto;
+    }
+    .acount-info h1 {
+   
+        margin-bottom: 1rem;
+    }
+    .acount-info h1 {
+    
+        margin-bottom: 2rem;
+    }
+    
+}
+@media(max-width:450px){
+    #user-create-btn {
+        text-align: right;
+        margin-right: 2.8rem;
+        
+    }
+    .create_btn{
+       
+    }
+}
+
 
 /*================End USER PAGE==============*/
 
