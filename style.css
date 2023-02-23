@@ -1286,6 +1286,9 @@ max-width: 90%;
 .admin_bg {
     background-color: var(--white);
 }
+.woning-admin{
+    display: none;
+}
 
 .admin_forms {
     background-color: var(--white);
@@ -1560,3 +1563,21 @@ input[type=radio].progress {
     background-color: var(--logout-btn);
     width: 160px;
 }
+
+@media(max-width:727px){
+    .admin_bg{
+        background-color: var(--body-color);
+    }
+    .admin_bg section{
+        display: none;
+    }
+    .woning-admin{
+        display: block;
+        font-size: 1.5rem;
+        color: var(--view-color);
+        text-align: center;
+
+        margin-top: 3rem;
+
+      
+}}
