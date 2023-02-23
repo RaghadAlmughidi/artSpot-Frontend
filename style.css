@@ -51,6 +51,19 @@ section {
     background-color: var(--body-color);
     z-index: 1;
 }
+.create_btn {
+    color: var(--admin-btn);
+    background-color: var(--btn-create);
+    width: 250px;
+    padding: 1rem;
+    border-radius: var(--input-border-radius);
+    border: none;
+    font-size: 1.20rem;
+    font-weight: bold;
+    margin-top: 3rem;
+
+
+}
 
 .circle {
     position: absolute;
@@ -1238,14 +1251,31 @@ max-width: 90%;
     
 }
 @media(max-width:450px){
-    #user-create-btn {
-        text-align: right;
-        margin-right: 2.8rem;
+    .create_btn-div{
+        width: 100%;
+        margin-top: 1rem;
         
     }
-    .create_btn{
-       
+    .user-btn {
+        display: block;
+        color: var(--admin-btn);
+        background-color: var(--btn-create);
+        width: 200px;
+        padding: .5rem;
+        border-radius: var(--input-border-radius);
+        border: none;
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: center;
+        margin: 0 auto;
+    
+    
     }
+    .logout{
+        width: 150px;
+        padding: .8rem;
+    }
+    
 }
 
 
@@ -1393,19 +1423,7 @@ input[type=file]::file-selector-button:hover,
     text-align: center;
 }
 
-.create_btn {
-    color: var(--admin-btn);
-    background-color: var(--btn-create);
-    width: 250px;
-    padding: 1rem;
-    border-radius: var(--input-border-radius);
-    border: none;
-    font-size: 1.20rem;
-    font-weight: bold;
-    margin-top: 3rem;
 
-
-}
 
 
 /*==========card status*/
