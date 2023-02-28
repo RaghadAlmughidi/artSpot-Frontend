@@ -1097,10 +1097,6 @@ max-width: 90%;
         .gallery_content-text h1{
             font-size: 1.5rem;
         }
-        .gallery_content-text p {
-            font-size: .5rem;
-           
-        } 
         .view {
             margin-top: 2rem;
             margin-left: 1rem;
@@ -1116,10 +1112,6 @@ max-width: 90%;
         .gallery_content-text h1{
             font-size: 1.5rem;
         }
-        .gallery_content-text p {
-            font-size: .4rem;
-           
-        } 
         .gallery-cards{
             display: grid;
             grid-template-columns: repeat(1, 1fr);
