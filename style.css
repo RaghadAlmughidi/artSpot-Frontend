@@ -768,7 +768,7 @@ max-width: 90%;
     bottom: 0;
     display: flex;
     justify-content: flex-end;
-
+    z-index: 333;
 }
 
 .circle2 {
@@ -822,6 +822,311 @@ max-width: 90%;
 .cart_circle:hover {
     background-color: var(--btn-color);
 }
+
+@media(max-width:1080px){
+
+    .gallery_content-text {
+        max-width: 600px;
+        width: 100%;
+        margin-top: 9rem;
+        margin-right: 9rem;
+    }
+    .gallery_img {
+        max-width: 25%;
+        width: 100%;
+    }
+
+    .view {
+        margin-top: 2rem;
+        margin-left: 8rem;
+    }
+    .gallery-cards {
+
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+        column-gap: 2.5rem;
+        row-gap: 2.5rem;
+    
+    }
+    .gallery-cards-2 {
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+        column-gap: 2.5rem;
+        row-gap: 2.5rem;
+    
+    }
+
+    .card {
+        /* width: ; */
+    }
+
+    .card-price {
+        gap: .3rem;
+        padding: .3rem .5rem;
+    }
+
+    .card-price a {
+        font-size: .87rem;
+        margin-bottom: .18rem;
+    }
+
+    .price-text {
+        margin-right: .3rem;
+    }
+}
+
+@media(max-width:997px){
+    .gallery_content-text {
+        margin-left: 2rem;
+        margin-top: 7rem;
+        margin-right: 7rem;
+
+    }
+
+     .gallery_content-text h1 {
+        font-size: 2.5rem;
+       
+    }
+    .gallery_content-text p {
+        font-size: .9rem;
+       
+    }
+
+    .gallery_img {
+        max-width: 27%;
+        width: 100%;
+    }
+
+    .view {
+        margin-top: 2rem;
+        margin-left: 8rem;
+    }
+    .view p i {
+     font-size: 0.5rem;
+
+     }
+    .gallery-cards {
+
+        gap: 1rem;
+        margin-top: 1rem;
+        column-gap: 2rem;
+        row-gap: 2rem;
+    
+    }
+    .gallery-cards-2 {
+        gap: 1rem;
+        margin-top: 1rem;
+        column-gap: 2rem;
+        row-gap: 2rem;
+    
+    }
+
+    .card-price {
+        gap: .2rem;
+        padding: .2rem .4rem;
+    }
+
+    .card-price a {
+        font-size: .83rem;
+        margin-bottom: .13rem;
+    }
+
+    .price-text {
+        margin-right: .2rem;
+    }
+}
+    @media(max-width:871px) {
+        /* .gallery_content-text{
+            margin-top: 5rem;
+            margin-right: 5rem;
+            margin-left: 1rem;
+        } */
+        .gallery_content-text h1 {
+            font-size: 2.3rem;
+           
+        }
+        .gallery_content-text p {
+            font-size: .8rem;
+           
+        }
+        .gallery_img {
+            min-width: 29%;
+        }
+        .view p i {
+         font-size: .3rem;
+
+        }
+        .card-price {
+        gap: .1rem;
+        padding: .1rem .3rem;
+        }
+        .card-price a {
+        font-size: .80rem;
+        margin-bottom: .10rem;
+        }
+    
+    }
+    @media(max-width:798px){
+    .gallery_content-text h1{
+        font-size: 2rem;
+    }
+    .gallery_content-text p {
+        font-size: .7rem;
+       
+    }
+        .gallery_img {
+            min-width: 30%;
+        }
+        .view p i {
+         font-size: 0.3rem;
+
+        }
+    }
+    @media(max-width:731px){
+        .gallery_content-text{
+            margin-top: 5rem;
+             margin-left: 7rem;
+             margin-bottom: 3rem;
+        }
+        .gallery_content-text h1{
+            font-size: 2.3rem;
+        }
+        .gallery_content-text p {
+            font-size: .8rem;
+           
+        }
+        .gallery_img {
+            display: none;
+            /* visibility: hidden; */
+    }
+    .view {
+        margin-top: 2rem;
+        margin-left: 5rem;
+    }
+    .card-price {
+        gap: 0rem;
+        padding: .5rem .2rem;
+        }
+     .card-price a i {
+        font-size: .75rem;
+    }
+
+    .circle2 {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .cart_circle {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .cart_size {
+        font-size: 3.5rem;
+    }
+
+    }
+    @media(max-width:647px){
+        .gallery_content-text h1{
+            font-size: 2rem;
+        }
+        .gallery_content-text p {
+            font-size: .7rem;
+           
+        } 
+        .view {
+            margin-top: 2rem;
+            margin-left: 3rem;
+        }
+        .card-text p{
+            font-size: .8rem;
+        }
+        .card-price {
+            gap: 0rem;
+        }
+    
+        .price-text {
+            margin-right: .1rem;
+        }
+    }
+    @media (max-width:592px) {
+        .gallery_content-text{
+             margin-left: 7rem;
+             margin-right: 7rem;
+             margin-bottom: 2rem;
+        }
+
+        .gallery_content-text h1{
+            font-size: 1.8rem;
+        }
+        .gallery_content-text p {
+            font-size: .6rem;
+           
+        } 
+        .view {
+            margin-top: 2rem;
+            margin-left: 2rem;
+        }
+        .view p{
+            font-size: 1.3rem;
+        }
+        .extra-f{
+            display: none;
+        }
+        .gallery-cards{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .card-text p{
+            font-size: 1rem;
+        }
+        .card-price {
+            gap: 0rem;
+        }
+        .price-text {
+            margin-right: .1rem;
+        }
+    }
+    @media(max-width:555px){
+        .gallery_content-text{
+             margin-left: 5rem;
+             margin-right: 5rem;
+             margin-bottom: 2rem;
+        }
+
+        .gallery_content-text h1{
+            font-size: 1.5rem;
+        }
+        .gallery_content-text p {
+            font-size: .5rem;
+           
+        } 
+        .view {
+            margin-top: 2rem;
+            margin-left: 1rem;
+        }
+    }
+    @media(max-width:453px){
+        .gallery_content-text{
+             margin-left: 3rem;
+             margin-right: 3rem;
+             margin-bottom: 1rem;
+        }
+
+        .gallery_content-text h1{
+            font-size: 1.5rem;
+        }
+        .gallery_content-text p {
+            font-size: .4rem;
+           
+        } 
+        .gallery-cards{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    
 
 
 /*================END GALLERY PAGE==============*/
