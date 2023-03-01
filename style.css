@@ -780,10 +780,6 @@ a {
     row-gap: 2.5rem;
   }
 
-  .card {
-    /* width: ; */
-  }
-
   .card-price {
     gap: 0.3rem;
     padding: 0.3rem 0.5rem;
@@ -853,11 +849,6 @@ a {
   }
 }
 @media (max-width: 871px) {
-  /* .gallery_content-text{
-            margin-top: 5rem;
-            margin-right: 5rem;
-            margin-left: 1rem;
-        } */
   .gallery_content-text h1 {
     font-size: 2.3rem;
   }
@@ -896,18 +887,18 @@ a {
 @media (max-width: 731px) {
   .gallery_content-text {
     margin-top: 5rem;
-    margin-left: 7rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
     margin-bottom: 3rem;
   }
   .gallery_content-text h1 {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
   }
   .gallery_content-text p {
     font-size: 0.8rem;
   }
   .gallery_img {
     display: none;
-    /* visibility: hidden; */
   }
   .view {
     margin-top: 2rem;
@@ -937,11 +928,9 @@ a {
 }
 @media (max-width: 647px) {
   .gallery_content-text h1 {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
-  .gallery_content-text p {
-    font-size: 0.7rem;
-  }
+
   .view {
     margin-top: 2rem;
     margin-left: 3rem;
@@ -949,26 +938,20 @@ a {
   .card-text p {
     font-size: 0.8rem;
   }
-  .card-price {
-    gap: 0rem;
-  }
-
   .price-text {
     margin-right: 0.1rem;
   }
 }
 @media (max-width: 592px) {
   .gallery_content-text {
-    margin-left: 7rem;
-    margin-right: 7rem;
     margin-bottom: 2rem;
   }
 
   .gallery_content-text h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .gallery_content-text p {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
   .view {
     margin-top: 2rem;
@@ -987,29 +970,25 @@ a {
   .card-text p {
     font-size: 1rem;
   }
-  .card-price {
-    gap: 0rem;
-  }
-  .price-text {
-    margin-right: 0.1rem;
-  }
+  
 }
 @media (max-width: 555px) {
   .gallery_content-text {
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
     margin-bottom: 2rem;
   }
 
   .gallery_content-text h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .view {
     margin-top: 2rem;
     margin-left: 1rem;
   }
+
 }
-@media (max-width: 453px) {
+@media (max-width: 459px) {
   .gallery_content-text {
     margin-left: 3rem;
     margin-right: 3rem;
@@ -1022,6 +1001,15 @@ a {
   .gallery-cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+  .extra-f2{
+    display: none;
+  }
+  .card-text p {
+    font-size: 1.3rem;
+  }
+  .card:hover {
+    transform: scale(1.05);
   }
 }
 
@@ -1174,15 +1162,12 @@ a {
       .artist_img h3 {
         font-size: 1rem;
       }
-    .card-text p {
-        font-size: 1rem;
-      }
-      .card-price {
+      .card-price2 {
         gap: 1rem;
         padding: .5rem;
         align-items: center;
       }
-      .price-text {
+      .price-text2 {
         margin-right: 0.1rem;
       }
 
@@ -1205,15 +1190,12 @@ a {
       .artist_img h3 {
         font-size: .8rem;
       }
-      .card-text p {
-        font-size: .8rem;
-      }
-      .card-price {
+      .card-price2 {
         gap: 0rem;
         padding: .2rem;
         align-items: center;
       }
-      .price-text {
+      .price-text2 {
         margin-right: 0rem;
       }
 }
@@ -1224,10 +1206,7 @@ a {
       .artist_img h3 {
         font-size: .7rem;
       }
-      .card-text p {
-        font-size: .7rem;
-      }
-      .card-price {
+      .card-price2 {
         padding: .2rem;
       }
 }
