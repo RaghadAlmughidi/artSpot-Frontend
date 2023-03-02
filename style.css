@@ -1892,6 +1892,9 @@ text-align: right;
         text-align: center;
         font-size: .5rem;
     }
+    .mail-input{
+        height: fit-content;
+    }
 
    
 }
