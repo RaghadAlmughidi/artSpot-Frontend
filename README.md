@@ -1,5 +1,5 @@
 # artSpot-Frontend
-react project static page to represnt information as business card
+ecommerce website  for selling Arts
 ## [Project Demo](https://euphonious-youtiao-9e02ea.netlify.app/)
 
 
