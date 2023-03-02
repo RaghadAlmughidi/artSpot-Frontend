@@ -1852,7 +1852,8 @@ footer img{
     background-color: #1E1E1E;
     border: 1px solid #888888;
     width: 300px;
-    padding: .9rem 1rem;
+    height: 50px;
+    padding: .5rem 1rem;
     border-radius: 30px;
     color: #fff;
 }
@@ -1862,6 +1863,7 @@ footer img{
     padding: .9rem;
     border-radius: 30px;
     width: 100px;
+    height: 50px;
     margin-left: -6.5rem;
     cursor: pointer;
     font-weight: bold;
@@ -1893,7 +1895,7 @@ text-align: right;
         font-size: .5rem;
     }
     .mail-input{
-        height: fit-content;
+     
     }
 
    
